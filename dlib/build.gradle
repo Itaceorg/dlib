@@ -3,14 +3,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.Itaceorg'
 android {
 
-    signingConfigs {
-        key0 {
-            keyAlias 'key0'
-            keyPassword 'zolar_robot'
-            storeFile file('C:/zolar_share/zolar_robot.jks')
-            storePassword 'zolar_robot'
-        }
-    }
+//    signingConfigs {
+//        key0 {
+//            keyAlias 'key0'
+//            keyPassword 'zolar_robot'
+//            storeFile file('C:/zolar_share/zolar_robot.jks')
+//            storePassword 'zolar_robot'
+//        }
+//    }
 
     compileSdkVersion 26
     defaultConfig {
@@ -27,12 +27,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.key0
+//            signingConfig signingConfigs.key0
         }
-        debug {
-            signingConfig signingConfigs.key0
-            minifyEnabled false
-        }
+//        debug {
+//            signingConfig signingConfigs.key0
+//            minifyEnabled false
+//        }
     }
 
     compileOptions {
